@@ -26,7 +26,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
 pragma solidity ^0.8.4;
 
-contract NFTColl1 is ERC721Enumerable, Ownable {
+contract NFTColl3 is ERC721Enumerable, Ownable {
 
     
     using Strings for uint256;
@@ -36,11 +36,11 @@ contract NFTColl1 is ERC721Enumerable, Ownable {
     uint256 public maxMintAmount = 5;
     bool public paused = false;
 
-    constructor() ERC721("Net2Dev NFT Collection", "N2D") {}
+    constructor() ERC721("NFTColl3", "NFTColl3") {}
 
 
     function _baseURI() internal view virtual override returns (string memory) {
-    return "ipfs://QmYB5uWZqfunBq7yWnamTqoXWBAHiQoirNLmuxMzDThHhi/";
+    return "ipfs://Qmcmc25FxpqU6wTRRGsLYKbVRKZRUG7RrSFrSQqKkonzhV/";
 
     }
     
